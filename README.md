@@ -1,6 +1,6 @@
 # Atlas BD
 
-Atlas BD is a map-first interactive geographic atlas for exploring universities across Bangladesh. It presents the country as a calm, holographic cartographic surface: public and private institutions resolve from signals into labelled markers as the map zooms in, while profiles, search, filters and live counts keep the experience useful rather than decorative.
+Atlas BD is a map first interactive geographic atlas for exploring universities across Bangladesh. It presents the country as a calm, holographic cartographic surface: public and private institutions resolve from signals into labelled markers as the map zooms in, while profiles, search, filters and live counts keep the experience useful rather than decorative.
 
 ## Features
 

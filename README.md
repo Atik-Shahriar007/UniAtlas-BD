@@ -43,7 +43,7 @@ No environment variables are required for the current static release. If the dat
 
 University records live in `src/data.ts` and follow a stable model: `id`, `name`, `shortName`, `type`, `category`, `division`, `district`, `city`, `address`, `latitude`, `longitude`, `establishedYear`, `logo`, `description`, `website`, `maps`, `source` and `lastVerified`.
 
-The initial atlas focuses on a meaningful representative set of recognized public and private universities across Dhaka, Chattogram, Khulna, Rajshahi, Sylhet, Mymensingh and Barishal divisions. Facts, official links and campus locations were assembled from official university websites and cross-checked against commonly used map locations during development. Campus coordinates are intended for geographic discovery, not surveying-grade precision. The UI makes the last-verified date visible in each profile.
+The expanded atlas contains **168 records** aligned to the requested national scope: 55 public, 110 private and 3 international universities. Names and recognition scope were assembled from the University Grants Commission directory and its university list, cross-checked against university source tables. Campus coordinates for directory-only entries are discovery-grade division/city approximations and are marked by the source note in each profile; they are not surveying-grade coordinates. The UI makes the last-verified date visible in each profile.
 
 ## Deployment
 
@@ -51,7 +51,7 @@ This repository is a Vite static site and can be deployed to GitHub Pages, Verce
 
 ## Known limitations
 
-The current version uses a stylized local SVG map rather than a live GIS tile source, so district boundaries are illustrative and the initial dataset is curated rather than exhaustive. The next production iteration should add a GeoJSON boundary layer, a larger UGC-validated university registry, an image CDN for official marks and server-backed dataset versioning.
+The current version uses a local SVG map generated from a Bangladesh GeoJSON country boundary rather than live GIS tiles. The country outline is complete, but district boundaries remain illustrative and the dataset intentionally follows the requested 55/110/3 scope rather than attempting to model every historical, closed or proposed institution. The next production iteration should add official district GeoJSON, verified campus coordinates, an image CDN for official marks and server-backed dataset versioning.
 
 ## Future improvements
 

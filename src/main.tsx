@@ -24,7 +24,7 @@ function App() {
   return <main className="app-shell">
     <div className="ambient ambient-one"/><div className="ambient ambient-two"/>
     <header className="topbar">
-      <button className="brand" onClick={reset} aria-label="Return to Bangladesh overview"><span className="brand-mark"><span/></span><span><b>ATLAS</b><em>BD</em><small>UNIVERSITY INTELLIGENCE</small></span></button>
+      <button className="brand" onClick={reset} aria-label="Return to Bangladesh overview"><span className="brand-mark"><span/></span><span><b>UniAtlas</b><em>BD</em><small>UNIVERSITY INTELLIGENCE</small></span></button>
       <div className="top-actions"><button className="nav-link active">Explore</button><button className="nav-link" onClick={()=>setAboutOpen(true)}>About</button><div className="live"><i/>LIVE ATLAS</div></div>
     </header>
     <section className="search-wrap"><div className="search-box"><span className="search-icon">⌕</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search university, city, district…" aria-label="Search universities"/><kbd>⌘ K</kbd></div>{query && <div className="search-results">{filtered.slice(0,5).map(u=><button key={u.id} onClick={()=>focus(u)}><span className="result-dot" style={{background:palette[u.type]}}/><span><b>{u.name}</b><small>{u.shortName} · {u.city}</small></span><span>↗</span></button>)}{!filtered.length&&<p>No universities found in the atlas.</p>}</div>}</section>
